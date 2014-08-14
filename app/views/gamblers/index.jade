@@ -1,0 +1,15 @@
+extends ../shared/template
+
+block content
+  h1 Gamblers!
+  h2 List of current gamblers:
+
+  .gamblers
+    each gambler in gamblers
+      .gambler(data-gambler-id=gambler._id.toString())
+      .name= gambler.name
+      .spouse= gambler.spouse.name
+      .cash= gambler.cash
+
+block scripts
+  script(src='/js/user/main.js')
