@@ -15,6 +15,11 @@ module.exports = function(app, express){
   app.get('/', home.index);
 
   app.get('/gamblers', gamblers.index);
+  app.post('/gamblers', gamblers.create);
+  app.get('/gamblers/new', gamblers.new);
+  app.delete('/gamblers/:id/assets/:name', gamblers.sellAsset);
+  app.get('/gamblers/:id/assets/new', gamblers.newAsset);
+  app.put('/gamblers/:id/assets', gamblers.addAsset);
 
   console.log('Routes Loaded');
 };

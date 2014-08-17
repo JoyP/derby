@@ -12,12 +12,18 @@ block content
         .results
           span.wins Wins: #{gambler.results.wins},
           span.losses Losses: #{gambler.results.losses}
-        .spouse
-          .photo(style='background-image:url("#{gambler.spouse.photo}");')
-          .name= gambler.spouse.name
+        if gambler.assets.length
+          .spouse
+            .photo(style='background-image:url("#{gambler.spouse.photo}");')
+            .name= gambler.spouse.name
         .assets
+          a(href= '/gamblers/#{gambler._id}/assets/new') Add Asset
           each asset in gambler.assets
             .asset
-               .info
-                 .name= asset.name
-                 .value $#{asset.value.toFixed(2)}
+              .photo(style= 'background-image:url("#{asset.photo}");')
+                .info
+                  .name= asset.name
+                  .value $#{asset.value.toFixed(2)}
+
+block scripts
+  script(src='/js/user/gambler.js')

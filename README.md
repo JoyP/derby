@@ -1,7 +1,9 @@
 ## name of project
 ### Code Badges
 build status icon
+[![Build Status](https://travis-ci.org/JoyP/derby.svg?branch=master)](https://travis-ci.org/JoyP/derby)
 coverage status icon
+[![Coverage Status](https://coveralls.io/repos/JoyP/derby/badge.png)](https://coveralls.io/r/JoyP/derby)
 
 ### About
 write a description about your project
