@@ -3,7 +3,65 @@
 body{
   font-family: 'Open Sans', sans-serif;
   font-size: 13px;
-  background-color: gray;
 }
 
+body{
+  padding: 20px;
+}
 
+.gambler{
+  display: inline-block;
+  width: 250px;
+  border: 1px solid #111111;
+  margin: 0px 20px 20px 0px;
+  background-color: #7FDBFF;
+  padding: 7px;
+}
+
+.gambler > .name{
+  font-size: 20px;
+  margin: 10px 0px 10px 0px;
+}
+
+.gambler > .results{
+  margin: 10px 0px 10px 0px;
+}
+
+.gambler > .photo{
+  height: 300px;
+  background-size: cover;
+  border: 1px solid #111111;
+}
+
+.spouse > .photo{
+  height: 200px;
+  background-size: cover;
+  border-top: 1px solid #111111;
+  border: 1px solid #111111;
+}
+
+.spouse > .name{
+  font-size: 15px;
+  margin: 10px 0px 10px 0px;
+}
+
+.asset{
+  border: 1px dashed #111111;
+  margin-bottom: 10px;
+}
+
+.asset > .photo{
+  position: relative;
+  height: 150px;
+  background-size: cover;
+}
+
+.photo > .info{
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: #FFDC00;
+  color: #111111;
+  border: 1px solid #111111;
+  padding: 5px;
+}

@@ -1,0 +1,38 @@
+{
+  "name":"Vincent",
+  "spouse":{"name":"Audrey", "photo":"http://favim.com/orig/201105/15/all-audrey-audrey-hepburn-bampw-enjoy-happy-Favim.com-45199.jpg"},
+  "photo":"http://ia.media-imdb.com/images/M/MV5BMjA1OTEyNzcyNl5BMl5BanBnXkFtZTYwMTgwOTU2._V1_SY450_SX362_AL_.jpg",
+  "cash":10000,
+  "assets":[
+      {"name":"ring", "value":5000}, 
+      {"name":"mazda", "value":40000}, 
+      {"name":"necklace", "value":8000}
+    ],
+  "results":{"wins":10, "losses":4}
+}
+
+{
+  "name":"Larry",
+  "spouse":{"name":"Donna", "photo":"http://images.clipartof.com/small/6244-Woman-In-A-Robe-With-Hair-In-Curlers-Using-A-Garden-Hose-To-Water-Clipart-Picture.jpg"},
+  "photo":"http://www.inkart.com/images/Line_Art_Detail_Add/1850s_Gambler.jpg",
+  "cash":2000,
+  "assets":[
+      {"name":"truck", "value":2500}, 
+      {"name":"boat", "value":2000}, 
+      {"name":"gun", "value":900}
+    ],
+  "results":{"wins":30, "losses":50}
+}
+
+{
+  "name":"David",
+  "spouse":{"name":"Laura", "photo":"http://i182.photobucket.com/albums/x185/avelectrician/cleanedwhitehairshine_zps31ea2855.png"},
+  "photo":"http://fc07.deviantart.net/fs30/i/2008/066/0/8/Funny_Face_Allen_by_zomgspongelolbob48.png",
+  "cash":200000,
+  "assets":[
+      {"name":"paper-weight", "value":1200}, 
+      {"name":"jaguar", "value":80000}, 
+      {"name":"watch", "value":7000}
+    ],
+  "results":{"wins":15, "losses":2}
+}

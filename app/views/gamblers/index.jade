@@ -1,15 +1,23 @@
 extends ../shared/template
 
+extends ../shared/template
 block content
-  h1 Gamblers!
-  h2 List of current gamblers:
-
-  .gamblers
+  h2 The Gamblers
+  #gamblers
     each gambler in gamblers
-      .gambler(data-gambler-id=gambler._id.toString())
-      .name= gambler.name
-      .spouse= gambler.spouse.name
-      .cash= gambler.cash
-
-block scripts
-  script(src='/js/user/main.js')
+      .gambler
+        .photo(style='background-image:url("#{gambler.photo}");')
+        .name= gambler.name
+        .cash $#{gambler.cash.toFixed(2)}
+        .results
+          span.wins Wins: #{gambler.results.wins},
+          span.losses Losses: #{gambler.results.losses}
+        .spouse
+          .photo(style='background-image:url("#{gambler.spouse.photo}");')
+          .name= gambler.spouse.name
+        .assets
+          each asset in gambler.assets
+            .asset
+               .info
+                 .name= asset.name
+                 .value $#{asset.value.toFixed(2)}
