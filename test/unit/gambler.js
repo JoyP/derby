@@ -43,11 +43,10 @@ describe('Gambler', function(){
 
   describe('.create', function(){
     it('should save an object to the database', function(done){
-      var newGambler  = {name:'bob', photo:'bob.png', spouse:{name:'jane', photo:'jane.png'}, cash: '5000'},
-      g               = new Gambler(newGambler);
+      var g = {name:'bob', photo:'bob.png', spouse:{name:'jane', photo:'jane.png'}, cash: '5000'};
 
       Gambler.create(g, function(err,gambler){
-        expect(g._id).to.be.instanceof(Mongo.ObjectID);
+        expect(gambler._id).to.be.instanceof(Mongo.ObjectID);
         done();
       });
     });
@@ -61,5 +60,38 @@ describe('Gambler', function(){
       });
     });
   });
+
+  describe('.findById', function(){
+    it ('should find one gambler by its ID', function(done){
+      Gambler.findById('000000000000000000000001', function(err, gambler){
+        expect(gambler).to.be.instanceof(Gambler);
+        expect(gambler.name).to.equal('Vincent');
+        done();
+      });
+    });
+  });
+
+  describe('#sellAsset', function(){
+    it('should remove an asset from a gambler', function(){
+      Gambler.findById('000000000000000000000002', function(err, g){
+        g.sellAsset('truck', function(err, asset){
+          expect(g.cash).to.equal(4500);
+          expect(g.assets).to.have.length(2);
+        });
+      });
+    });
+  });
+
+  describe('#addAsset', function(){
+    it('should add an asset to a gambler', function(){
+      Gambler.findById('000000000000000000000003', function(err, g){
+        var a = {name:'mazda', photo: 'mazda.png', value: '30000'};
+        g.addAsset(a, function(err, asset){
+          expect(g.assets).to.have.length(4);
+        });
+      });
+    });
+  });
+
 });
 
