@@ -2,12 +2,12 @@
   "_id":{"$oid":"000000000000000000000001"},
   "name":"Vincent",
   "spouse":{"name":"Audrey", "photo":"http://favim.com/orig/201105/15/all-audrey-audrey-hepburn-bampw-enjoy-happy-Favim.com-45199.jpg"},
-  "photo":"http://ia.media-imdb.com/images/M/MV5BMjA1OTEyNzcyNl5BMl5BanBnXkFtZTYwMTgwOTU2._V1_SY450_SX362_AL_.jpg",
+  "photo":"http://orphaned-entertainment.jonja.net/wp-content/uploads/2013/03/vincent-price-1938.jpg",
   "cash":10000,
   "assets":[
-      {"name":"ring", "value":5000}, 
-      {"name":"mazda", "value":40000}, 
-      {"name":"necklace", "value":8000}
+      {"name":"ring", "photo":"http://bestclipartblog.com/clipart-pics/ring-clip-art-10.jpg", "value":5000},
+      {"name":"mazda", "photo":"http://static.freepik.com/free-photo/black-sedan-car-clip-art_412124.jpg", "value":40000},
+      {"name":"necklace", "photo":"http://fastly.fotor.com/fotor.test/f287f879be734771805d7e5091f35fc7/f287f879be734771805d7e5091f35fc7_p_400.png", "value":8000}
     ],
   "results":{"wins":10, "losses":4}
 }
@@ -15,13 +15,13 @@
 {
   "_id":{"$oid":"000000000000000000000002"},
   "name":"Larry",
-  "spouse":{"name":"Donna", "photo":"http://images.clipartof.com/small/6244-Woman-In-A-Robe-With-Hair-In-Curlers-Using-A-Garden-Hose-To-Water-Clipart-Picture.jpg"},
+  "spouse":{"name":"Donna", "photo":"http://rlv.zcache.com/retro_vintage_black_white_happy_money_woman_poster-r0522e118a05e4a0a8a8bd5109523a6c0_we1qq_8byvr_512.jpg"},
   "photo":"http://www.inkart.com/images/Line_Art_Detail_Add/1850s_Gambler.jpg",
   "cash":2000,
   "assets":[
-      {"name":"truck", "value":2500}, 
-      {"name":"boat", "value":2000}, 
-      {"name":"gun", "value":900}
+      {"name":"truck", "photo":"http://images.clipartpanda.com/truck-clipart-ncER7qRcA.png", "value":2500}, 
+      {"name":"boat", "photo":"http://4vector.com/i/free-vector-speed-boat-clip-art_103351_Speed_Boat_clip_art_hight.png", "value":2000}, 
+      {"name":"gun", "photo":"http://www.slickguns.com/sites/default/files/411544803_0.jpg", "value":900}
     ],
   "results":{"wins":30, "losses":50}
 }
@@ -29,13 +29,13 @@
 {
   "_id":{"$oid":"000000000000000000000003"},
   "name":"David",
-  "spouse":{"name":"Laura", "photo":"http://i182.photobucket.com/albums/x185/avelectrician/cleanedwhitehairshine_zps31ea2855.png"},
+  "spouse":{"name":"Laura", "photo":"http://img-cache.cdn.gaiaonline.com/1df22617865fceb1b6126db5f05fc141/http://i210.photobucket.com/albums/bb244/dellie1896/Girls/9509582c.jpg"},
   "photo":"http://fc07.deviantart.net/fs30/i/2008/066/0/8/Funny_Face_Allen_by_zomgspongelolbob48.png",
   "cash":200000,
   "assets":[
-      {"name":"paper-weight", "value":1200}, 
-      {"name":"jaguar", "value":80000}, 
-      {"name":"watch", "value":7000}
+      {"name":"paper-weight", "photo":"http://kelekchens.files.wordpress.com/2011/03/vase-of-r30682.jpg", "value":1200},
+      {"name":"jaguar", "photo":"http://eng.namonitore.ru/uploads/catalog/cars/jaguar_3_1280.jpg", "value":80000},
+      {"name":"watch", "photo":"http://upload.wikimedia.org/wikipedia/commons/8/85/Qtz_watch.png", "value":7000}
     ],
   "results":{"wins":15, "losses":2}
 }
